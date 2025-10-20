@@ -5,7 +5,21 @@ Este repositório contém o código e os dados para um projeto de análise ambie
 O projeto simula Áreas de Estudo (AEs) e Áreas Diretamente Afetadas (ADAs), obtém dados de ocorrências de espécies do GBIF, calcula indicadores ambientais (vetoriais e raster) e apresenta os resultados de forma interativa na web.
 
 ### Estrutura do Repositório
-projeto_amplo/ │ ├── .gitignore # Ignora arquivos desnecessários (ambientes virtuais, cache) ├── README.md # Este arquivo ├── requirements.txt # Lista de dependências do Python │ ├── assets/ # Arquivos CSS e recursos do dashboard │ └── style.css │ ├── data/ # Dados brutos e processados │ └── Data.gpkg # GeoPackage central com todas as camadas │ └── raster/ # Raster do projeto (download abaixo) │ └── src/ # Código-fonte ├── 01_gerar_aes.py ├── 02_gerar_adas.py ├── 03_download_gbif.py ├── 04_calculate_indicators.py └── app.py
+projeto_amplo/  
+│ ├── .gitignore # Ignora arquivos desnecessários (ambientes virtuais, cache)  
+├── README.md # Este arquivo  
+├── requirements.txt # Lista de dependências do Python  
+│ ├── assets/ # Arquivos CSS e recursos do dashboard  
+│ └── style.css  
+│ ├── data/ # Dados brutos e processados  
+│ └── Data.gpkg # GeoPackage central com todas as camadas  
+│ └── raster/ # Raster do projeto (download abaixo)  
+│ └── src/ # Código-fonte  
+├── 01_area_estudo.py  
+├── 02_area_diretamente_afetada.py  
+├── 03_requisicao_gbif.py  
+├── 04_indicadores.py  
+└── app.py
 
 
 ## Download dos Dados
@@ -38,11 +52,11 @@ pip install -r requirements.txt
 ### 2. Execução do Pipeline de Dados
 Os scripts devem ser executados em ordem para gerar e processar os dados. Eles irão criar ou modificar o arquivo data/Data.gpkg.
 
-python src/01_gerar_aes.py
-python src/02_gerar_adas.py
-python src/03_download_gbif.py
-python src/04_calculate_indicators.py
-
+python src/01_area_estudo.py  
+python src/02_area_diretamente_afetada.py  
+python src/03_requisicao_gbif.py  
+python src/04_indicadores.py  
+python src/05_app.py  
 ### 3. Execução do Dashboard Web
 Após executar o pipeline de dados, inicie a aplicação Dash.
 
