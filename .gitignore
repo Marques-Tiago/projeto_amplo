@@ -1,0 +1,21 @@
+Ambientes virtuais do Python
+
+venv/
+.venv/
+
+Arquivos de cache e compilados do Python
+
+pycache/
+*.pyc
+*.pyo
+*.pyd
+
+Arquivos de IDEs
+
+.idea/
+.vscode/
+
+Arquivos de sistema operacional
+
+.DS_Store
+Thumbs.db"data/raster/*.tif" 
