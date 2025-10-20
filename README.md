@@ -10,7 +10,7 @@ projeto_amplo/ │ ├── .gitignore # Ignora arquivos desnecessários (ambie
 
 ## Download dos Dados
 
-O raster do projeto pode ser baixado neste link do Google Drive e deverá ser salvo na pasta "Raster".
+O raster do projeto pode ser baixado neste link do Google Drive e deverá ser salvo na pasta "Data" com o nome "raster".
 
 [Download Raster](https://drive.google.com/drive/folders/1PMvYD3S4GAeBGPcm4YG0z3nCJ_qUBcB2?usp=drive_link)
 
